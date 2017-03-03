@@ -27,8 +27,5 @@ docker-compose down
 docker-compose logs
 ```
 ## Reference
-- [Vue.js](https://vuejs.org/)
-- [Vue-cli](https://github.com/vuejs/vue-cli)
-- [Vue-router](https://router.vuejs.org/)
-- [Vuex](https://vuex.vuejs.org/)
-- [vuejs-datepicker](https://www.npmjs.com/package/vuejs-datepicker)
+- [express](http://expressjs.com/zh-tw/)
+- [mocha](https://mochajs.org/)

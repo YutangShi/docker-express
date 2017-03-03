@@ -1,0 +1,17 @@
+db:
+  image: mongo:3.0
+  ports:
+    - "27017:27017"
+  command: "--smallfiles --logpath=/dev/null"
+web:
+  build: .
+  #image: access-node
+  command: node app.js
+  volumes:
+    - ./app:/myapp
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  environment:
+    PORT: 3000

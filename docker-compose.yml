@@ -3,6 +3,7 @@ db:
   ports:
     - "27017:27017"
   command: "--smallfiles --logpath=/dev/null"
+  restart: on-failure
 web:
   build: .
   #image: access-node
@@ -15,3 +16,5 @@ web:
     - db
   environment:
     PORT: 3000
+  restart: on-failure
+
